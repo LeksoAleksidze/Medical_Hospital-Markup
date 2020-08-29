@@ -11,6 +11,8 @@ const leftBtn = lightbox.querySelector('.left');
 const rightBtn = lightbox.querySelector('.right');
 const counter = lightbox.querySelector('.img-count');
 
+const body = document.querySelector('body');
+
 let itemIndex = 0;
 
 for( let x = 0; x < item.length; x++ ){
@@ -20,6 +22,7 @@ for( let x = 0; x < item.length; x++ ){
 		itemIndex = x;
 		changePhoto();
 		photoToggle();
+        body.classList.toggle('noscroll');
 	})
 
 };
@@ -41,6 +44,7 @@ function changePhoto(){
 
 closeBtn.onclick  =()=>{
 
+    body.classList.toggle('noscroll');
    lightbox.classList.toggle('open');
 }
 
