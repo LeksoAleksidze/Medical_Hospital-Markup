@@ -547,8 +547,6 @@ nav .navbar-nav  a.active::after
 	top: 50%;
 	transform: translate(-50%,-50%);
 	display: none;
-	background-color: #fff;
-	padding: 5px 0px;
 }
 #lightbox.open
 {
